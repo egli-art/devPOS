@@ -18,12 +18,13 @@ export class MenuFoodComponent implements OnInit{
     const dialogRef = this.dialog.open(TicketBillComponent, {
       width: '390px',
       height: '465px',
+      position: {
+        left: '10%',},
       panelClass: '.mat-dialog-container',
       data: ''
     })
     dialogRef.afterClosed().subscribe(result => {
       console.log(`Dialog result: ${result}`);
-      window.location.reload();
 
     });
 

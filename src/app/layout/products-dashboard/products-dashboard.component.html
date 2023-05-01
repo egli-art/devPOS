@@ -1,7 +1,8 @@
+<div class="test">
 <div class="dashboard" *ngFor="let items of data.categories"  >
 <div class="checkbox-group"  *ngFor="let products of items.products" >
   <label>
-    <input type="checkbox" name="square1" (click)="selectedSquareValue = 1" >
+    <input type="checkbox" name="square1" (click)="selectedSquareValue = 1"  >
     <div class="square">
       <div
         [ngStyle]="{'background-color': getRandomColor()}"  class="square" style="position: relative;  display: flex; ">
@@ -20,3 +21,4 @@
   </div>
 </div>
 
+</div>

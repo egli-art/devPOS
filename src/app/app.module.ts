@@ -14,6 +14,7 @@ import { MatFormFieldModule} from "@angular/material/form-field";
 import {MenuFoodComponent} from "./layout/products-dashboard/menu-food/menu-food.component";
 import {RouterLink, RouterModule, RouterOutlet, Routes} from "@angular/router";
 import {PizzaComponent} from "./layout/products-dashboard/pizza/pizza.component";
+import {CloseTicketComponent} from "./layout/ticket-bill/close-ticket/close-ticket.component";
 
 
 const routes: Routes = [
@@ -32,6 +33,7 @@ const routes: Routes = [
     TicketBillComponent,
     MenuFoodComponent,
     PizzaComponent,
+    CloseTicketComponent
   ],
 
   imports: [

@@ -13,7 +13,11 @@ body {
   color: var(--text-color);
   transition: background-color 0.2s ease, color 0.2s ease;
 }
-
+.dashboard{
+  position: fixed;
+  width: auto;
+  height: auto;
+}
 .dark-mode {
   --bg-color: var(--bg-color-dark);
   --text-color: var(--text-color-dark);

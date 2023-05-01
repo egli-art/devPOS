@@ -1,6 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 import {MatDialog} from '@angular/material/dialog';
 import {TicketBillComponent} from "../ticket-bill/ticket-bill.component";
+
+
 @Component({
   selector: 'products-dashboard',
   templateUrl: './products-dashboard.component.html',
@@ -18,12 +20,13 @@ export class ProductsDashboardComponent implements OnInit{
     const dialogRef = this.dialog.open(TicketBillComponent, {
       width: '390px',
       height: '465px',
-      panelClass: 'my-dialog',
+      position: {
+        left: '10%',},
+      panelClass: '.mat-dialog-container',
       data: ''
     })
     dialogRef.afterClosed().subscribe(result => {
       console.log(`Dialog result: ${result}`);
-      window.location.reload();
 
     });
 
@@ -86,6 +89,7 @@ export class ProductsDashboardComponent implements OnInit{
         }
       ]
     }
+
 
 
   getRandomColor() {

@@ -1,5 +1,6 @@
 import {Component, Inject} from '@angular/core';
-import {MAT_DIALOG_DATA, MatDialogRef} from "@angular/material/dialog";
+import {MAT_DIALOG_DATA, MatDialog, MatDialogRef} from "@angular/material/dialog";
+import {CloseTicketComponent} from "./close-ticket/close-ticket.component";
 
 
 @Component({
@@ -70,12 +71,34 @@ export class TicketBillComponent {
 
   constructor(
     public dialogRef: MatDialogRef<TicketBillComponent>,
-    @Inject(MAT_DIALOG_DATA) public datas: any
+    @Inject(MAT_DIALOG_DATA) public datas: any ,
+    private dialog: MatDialog
+
   ) {
+  }
+
+
+
+  openDialog() {
+    const dialogRef = this.dialog.open(CloseTicketComponent, {
+      width: '390px',
+      height: '180px',
+      position: {
+        left: '10%',
+      },
+      panelClass: '.mat-dialog-container',
+      data: ''
+    })
+    dialogRef.afterClosed().subscribe(result => {
+      window.location.reload();
+
+    });
   }
 
   onNoClick(): void {
     this.dialogRef.close();
+    this.openDialog();
+
   }
 
 

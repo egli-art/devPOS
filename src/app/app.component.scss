@@ -1,12 +1,15 @@
+
 .footer {
-  width: 100%;
-  position: absolute;
   justify-content: center;
   margin: auto;
   color: white;
   display: flex;
   align-items: center;
   background-color: #65874D;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
 }
 .content {
   display: inline-flex;
