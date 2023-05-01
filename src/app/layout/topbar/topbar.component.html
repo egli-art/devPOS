@@ -1,0 +1,12 @@
+<div class="topbar" [ngStyle]="{'background-color': isDarkMode ? 'black' : 'white', 'color': isDarkMode ? 'white': 'black'}">
+  <div class="avatar">
+    <div class="initial-avatar">{{data.businessName.slice(0,2).toLocaleUpperCase()}}</div>
+  </div>
+    <div class="name" >
+    <h3>{{data.businessName}}</h3>
+      <p>{{data.nuis}}</p>
+  </div>
+    <div class="toggle" (click)="toggleDarkMode()">
+      <div class="circle"></div>
+    </div>
+</div>

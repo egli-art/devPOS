@@ -1,0 +1,31 @@
+.footer {
+  width: 100%;
+  position: absolute;
+  justify-content: center;
+  margin: auto;
+  color: white;
+  display: flex;
+  align-items: center;
+  background-color: #65874D;
+}
+.content {
+  display: inline-flex;
+  margin-left: 40%;
+}
+.dot {
+  width: 18px;
+  height: 18px;
+  background-color: white;
+  border-radius: 100%;
+  margin: 5px;
+  margin-top: 20px;
+
+}
+.footer p{
+  color: #19232E;
+  font-size: 20px;
+}
+
+.footer h4{
+  color: white;
+}
