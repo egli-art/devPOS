@@ -12,12 +12,14 @@
   align-items: center;
   overflow: hidden;
 
+
+
 }
 button{
   position: absolute;
   justify-content: center;
   display: flex;
-  width: 370px;
+  width: 300px;
   height: 51px;
   background-color: #F44242;
   font-size: 24px;
@@ -27,3 +29,6 @@ button{
 
 }
 
+.buttons{
+  color: white;
+}

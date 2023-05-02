@@ -42,9 +42,6 @@
   white-space: nowrap;
 }
 
-.horizontal-scroll{
-
-}
 
 @media (max-width: 768px) {
   .topbar {
@@ -58,10 +55,6 @@
   }
 }
 
-nav{
-  background-color: #666666;
-  color: white;
-}
 nav ul {
   margin: 0;
   padding: 0;
@@ -79,14 +72,16 @@ nav a {
   display: block;
   padding: 10px;
   text-decoration: none;
-  color: #fff;
 }
 
 nav a:hover {
-  background-color: #fff;
   color: #F44242;
 }
 
 nav a:active {
   background-color: #ccc;
+  color: #F44242;
+}
+nav a.active{
+  color: #F44242;
 }

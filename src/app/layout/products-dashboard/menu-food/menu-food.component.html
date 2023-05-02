@@ -1,12 +1,12 @@
 <div class="dashboard" *ngFor="let items of datasproduct.categories"  >
   <div class="checkbox-group"  *ngFor="let products of items.products" >
     <label>
-      <input type="checkbox" name="square1" (click)="selectedSquareValue = 1" >
+      <input type="checkbox" name="square1" (click)="selectedSquareValue = 1"  >
       <div class="square">
         <div
           [ngStyle]="{'background-color': getRandomColor()}"  class="square" style="position: relative;  display: flex; ">
           <span class="capital">{{items.name.slice(0,1).toLocaleUpperCase()}}</span>
-          <span class="product">{{products.name.slice(0,5) + '..'}}
+          <span class="product">{{products.name}}
         </span>
           <span class="price" ><p><strong>{{products.unitPrice}}</strong>&nbsp;lekë</p></span>
         </div>
@@ -15,7 +15,8 @@
   </div>
 </div>
 <div class="ticket" >
-  <div class="count" *ngIf="selectedSquareValue > 0" (click)="openDialog()">
+  <div class="count" *ngIf="selectedSquareValue > 0"       (click)="openDialog()">
     <p>{{ selectedSquareValue}} </p>
   </div>
 </div>
+

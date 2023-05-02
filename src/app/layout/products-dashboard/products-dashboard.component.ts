@@ -12,13 +12,13 @@ export class ProductsDashboardComponent implements OnInit{
   selectedSquareValue: number | any;
 
   constructor(private dialog: MatDialog) { }
-
+  isSelected = false;
   ngOnInit(): void {
   }
 
   openDialog() {
     const dialogRef = this.dialog.open(TicketBillComponent, {
-      width: '390px',
+      width: '320px',
       height: '465px',
       position: {
         left: '10%',},

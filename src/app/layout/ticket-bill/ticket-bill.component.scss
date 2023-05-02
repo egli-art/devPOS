@@ -1,8 +1,37 @@
+.totalprice{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+
+}
+.counts{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.counts select{
+  background-color: #F7F7F7;
+  width: 80px;
+  color: black;
+  margin-left: auto;
+  border: 1px solid white;
+  align-items: center;
+}
+.prices {
+  display: flex;
+  position: relative;
+  margin-top: 12px;
+  margin-left: auto;
+  font-size: 24px;
+  color: #F44242;
+
+}
 .ticket-bill{
   overflow: hidden;
   margin-top: auto;
   text-transform: uppercase;
-  width: 390px;
+  width: 320px;
   height: 460px;
 }
 
@@ -13,6 +42,7 @@
 }
 select {
   padding: 10px;
+  width: 40px;
   font-size: 16px;
   border-radius: 5px;
 }
@@ -20,12 +50,22 @@ select {
 button{
   position: absolute;
   justify-content: center;
-  width: 370px;
+  width: 300px;
   height: 51px;
   background-color: #F44242;
   font-size: 24px;
   color: white;
   text-transform: uppercase;
-  margin-top: -130px;
+  margin-top: -200px;
 }
 
+button p{
+  color: white;
+
+}
+@media (max-width: 480px) {
+  button p{
+    font-size: 20px;
+    margin: auto;
+  }
+}

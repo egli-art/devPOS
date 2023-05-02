@@ -16,7 +16,7 @@ export class PizzaComponent implements OnInit{
 
   openDialog() {
     const dialogRef = this.dialog.open(TicketBillComponent, {
-      width: '390px',
+      width: '320px',
       height: '465px',
       position: {
         left: '10%',},

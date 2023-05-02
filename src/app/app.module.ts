@@ -16,7 +16,7 @@ import {RouterLink, RouterModule, RouterOutlet, Routes} from "@angular/router";
 import {PizzaComponent} from "./layout/products-dashboard/pizza/pizza.component";
 import {CloseTicketComponent} from "./layout/ticket-bill/close-ticket/close-ticket.component";
 
-
+//////routes navigate pages of components///////////
 const routes: Routes = [
   { path: '', component: ProductsDashboardComponent },
   { path: 'menu-food', component: MenuFoodComponent },
@@ -25,6 +25,7 @@ const routes: Routes = [
 
 
 @NgModule({
+  /////declarations all componentes on app module//////
   declarations: [
     AppComponent,
     SlideTopbarComponent,

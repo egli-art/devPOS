@@ -5,3 +5,4 @@ export interface Dashboard {
   products: [];
 }
 
+////////////////there we show a object model of an API service//////////////

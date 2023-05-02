@@ -81,7 +81,7 @@ export class TicketBillComponent {
 
   openDialog() {
     const dialogRef = this.dialog.open(CloseTicketComponent, {
-      width: '390px',
+      width: '320px',
       height: '180px',
       position: {
         left: '10%',
